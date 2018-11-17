@@ -6,15 +6,15 @@ var newText = "";
 
 var tbody = d3.select("tbody");
 
-// tableData.forEach((ufo_data) => {
-//     //console.log(ufo_data); Test code
-//     var row = tbody.append("tr");
-//     Object.entries(ufo_data).forEach(([k,v]) => {
-//         //console.log(k,v) Test code
-//         var cell = row.append("td");
-//         cell.text(v);
-//     });
-// });
+tableData.forEach((ufo_data) => {
+    //console.log(ufo_data); Test code
+    var row = tbody.append("tr");
+    Object.entries(ufo_data).forEach(([k,v]) => {
+        //console.log(k,v) Test code
+        var cell = row.append("td");
+        cell.text(v);
+    });
+});
 
 inputField.on("change", function() {
     newText = d3.event.target.value;
